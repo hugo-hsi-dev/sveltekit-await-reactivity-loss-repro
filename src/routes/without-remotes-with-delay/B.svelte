@@ -2,6 +2,7 @@
     import { getStatus } from "../getStatus";
 
     export const getWeather = async (status: boolean) => {
+        // simulate network delay
         await new Promise((resolve) => setTimeout(resolve, 300));
 
         if (status) {
