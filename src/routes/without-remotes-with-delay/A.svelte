@@ -2,7 +2,8 @@
     import { getStatus } from "../getStatus";
 
     export const getMood = async (status: boolean) => {
-        await new Promise((resolve) => setTimeout(resolve, 3000));
+        // simulate network delay
+        await new Promise((resolve) => setTimeout(resolve, 300));
         if (status) {
             return "Happy";
         }

@@ -2,7 +2,7 @@
     import { getStatus } from "../getStatus";
 
     export const getWeather = async (status: boolean) => {
-        await new Promise((resolve) => setTimeout(resolve, 3000));
+        await new Promise((resolve) => setTimeout(resolve, 300));
 
         if (status) {
             return "Sunny";
