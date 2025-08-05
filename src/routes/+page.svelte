@@ -6,6 +6,8 @@
     const status = $derived(getStatus());
 </script>
 
+Open the console and click the link below
+
 <A />
 <B />
-<a href="?status={!status.value}">Toggle Boolean</a>
+<a href="?status={!status.value}">Toggle Status</a>
