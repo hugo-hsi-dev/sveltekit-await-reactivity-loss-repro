@@ -2,4 +2,9 @@
     import Counter from "./counter.svelte";
 </script>
 
-<Counter />
+<svelte:boundary>
+    <Counter />
+    {#snippet pending()}
+        loading...
+    {/snippet}
+</svelte:boundary>
